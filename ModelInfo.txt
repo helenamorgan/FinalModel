@@ -1,0 +1,47 @@
+Documentation of the development: 
+
+Version of the code: 
+This code works as intended to produce a GUI of an animation of a model that moves coordinates within a set environment. 
+Only one final version of the code has been produced for this assessment and to be assessed. 
+
+User documentation: 
+This GUI model is intended to be utilised by the user to illustrate coordinates moving due to the location and communication that occurs between the coordinates. 
+This is intended to be a simple model with minimal functionality with a simple GUI that is very user friendly and intuative. 
+A user presses the model menu where a drop down menu appears. 
+The users should then press the 'Run Model' option for the animation to begin. 
+
+Issues with the code: 
+Source code main class - model.py
+The figure 1 window continues to appear although the animation appears in the GUI model window. 
+I think this figure still appears due to the formatting of the matplotlib figure in line 49. 
+I have tried to remove/change this code but I have not been success. There is no code formating the figure to show so I am confused as to why it still appears. 
+It does not affect the functioning of the model. 
+
+Unit test - test.py 
+The unit test code does not work as intended. The unit test code fails to assess if the source code correctly runs. 
+I have tried to write this test code so that it tests the move function. 
+I specifically wanted it to test that the x and y value increase by 1 since they are bigger than the thresholds set by the move function. 
+An attributeerror occurs as the agentframework is the only source code imported therefore there are no values for x or y in this code. 
+However, I could not import the model code without the model running and preventing the test from occuring. 
+
+Reference list: 
+Leeds University. 2020. Programming for Geographical Information Analysis: Core Skills. [Online]. [Accessed 27 April 2021].
+Available at:https://www.geog.leeds.ac.uk/courses/computing/study/core-python/
+
+Matplotlib Documentation. 2020. How-to. [Online]. [Accessed 20 April 2021]. 
+Available at: https://matplotlib.org/3.3.3/faq/howto_faq.html
+
+Python Documentation. 2021. doctest - Test interactive Python examples. [Online]. [Accessed 18 April 2021]. 
+Available at: https://docs.python.org/3/library/doctest.html
+
+Python Documentation. 2021. Unit testing framework. [Online]. [Accessed 20 April 2021]. 
+Available at: https://docs.python.org/3/library/unittest.html
+
+Real Python. N/A. Getting started with testing in Python. [Online]. [Accessed 21 April 2021]. 
+Available at: https://realpython.com/python-testing/#unit-tests-vs-integration-tests
+
+Wikipedia. 2021. User Documentation. [Online]. [Accessed 27 April 2021]. 
+Available at:https://computersciencewiki.org/index.php/User_documentation
+
+
+

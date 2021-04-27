@@ -7,14 +7,15 @@ Created on Fri Apr 23 14:07:58 2021
 
 # test.py
 import unittest
-import model
+import agentframework
 
-class TestDocs(unittest.TestCase):
+class TestAgent(unittest.TestCase):
 
-    def test_agent(self):
-        a = model.Calc()
-        self.assertEqual(a.add(1,2), 3)
-
+    def test_move(self):
+        self._y = 35
+        a = agentframework.Agent
+        a.move(self._y)
+        self.assertEqual(a.move(), 36, "should be 36")
 
 if __name__ == '__main__':
     unittest.main()

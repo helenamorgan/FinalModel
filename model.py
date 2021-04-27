@@ -30,7 +30,7 @@ import csv
 # Set a seed to create the same numbers each time the code is run
 random.seed(4323432421)
 
-# Read in the CVS data file and create a list 
+# Read in the CSV data file and create a list 
 f = open('in.txt')
 reader = csv.reader(f, quoting = csv.QUOTE_NONNUMERIC)
 environment = []

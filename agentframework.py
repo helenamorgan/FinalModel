@@ -59,7 +59,7 @@ class Agent():
         if (y == None):
             self._y = random.randint(0,100)
         else:
-            self._y = x
+            self._y = y
     
     
     def move(self): 
