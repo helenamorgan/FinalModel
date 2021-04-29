@@ -4,12 +4,6 @@ Version of the code:
 This code works as intended to produce a GUI of an animation of a model that moves coordinates within a set environment. 
 Only one final version of the code has been produced for this assessment and to be assessed. 
 
-User documentation: 
-This GUI model is intended to be utilised by the user to illustrate coordinates moving due to the location and communication that occurs between the coordinates. 
-This is intended to be a simple model with minimal functionality with a simple GUI that is very user friendly and intuative. 
-A user presses the model menu where a drop down menu appears. 
-The users should then press the 'Run Model' option for the animation to begin. 
-
 Issues with the code: 
 Source code main class - model.py
 The figure 1 window continues to appear although the animation appears in the GUI model window. 
@@ -23,6 +17,8 @@ I have tried to write this test code so that it tests the move function.
 I specifically wanted it to test that the x and y value increase by 1 since they are bigger than the thresholds set by the move function. 
 An attributeerror occurs as the agentframework is the only source code imported therefore there are no values for x or y in this code. 
 However, I could not import the model code without the model running and preventing the test from occuring. 
+
+LICENSE document automatically created by Github. 
 
 Reference list: 
 Leeds University. 2020. Programming for Geographical Information Analysis: Core Skills. [Online]. [Accessed 27 April 2021].

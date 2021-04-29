@@ -136,5 +136,6 @@ class Agent():
 
         """
         return (((self._x - agent._x)**2) + ((self._y - agent._y)**2))**0.5
+    
         
     
