@@ -8,6 +8,11 @@ Created on Fri Apr 23 14:07:58 2021
 # test.py
 import unittest
 import agentframework
+import model
+import tkinter
+
+root = tkinter.Tk()
+root.quit()
 
 class TestAgent(unittest.TestCase):
 

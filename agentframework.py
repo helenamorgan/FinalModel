@@ -47,6 +47,7 @@ class Agent():
         Returns
         -------
         None.
+        
 
         """
         self.environment = environment
@@ -69,7 +70,7 @@ class Agent():
         Returns
         -------
         None.
-
+    
         """
         if random.random() < 0.5:
             self._y = (self._y + 1) % 100
