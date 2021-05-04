@@ -1,6 +1,6 @@
 # Final Agent-based Model 
  
- Contents of files within the distribution: 
+ Contents of files within the distribution:\n
  model.py    - this is the python source code for the main class that is run to produce the model. 
  agentframework.py    - this is the python source code for the Agent class that formulates the agents.
  in.txt    - this is a csv file with data that is used within the model. 
