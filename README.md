@@ -4,7 +4,7 @@
  **model.py**    - *this is the python source code for the main class that is run to produce the model.*<br>
  **agentframework.py**    - *this is the python source code for the Agent class that formulates the agents.*<br>
  **in.txt**    - *this is a csv file with data that is used within the model.*<br>
- **test.py**    - *this is the python unit test code that does not run as intended.*<br>
+ **test.py**    - *this is the python unit test code that tests the distance function in the agentframework.*<br>
  **index.html**    - *website that details the model and provides a link to the code on Github.*<br>
  **ModelInfo.txt** - *a text file detailing the development and issues with the code and other key information such as references and user documentation.*<br> 
  **conf.py**    - *this is the python configuration module.*<br>

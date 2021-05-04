@@ -1,22 +1,12 @@
 Documentation of the development: 
 
 Version of the code: 
-This code works as intended to produce a GUI of an animation of a model that moves coordinates within a set environment. 
+This code works as intended to produce a extremely simple GUI of an animation of a model that moves coordinates within a set environment. 
 Only one final version of the code has been produced for this assessment and to be assessed. 
 
 Issues with the code: 
-Source code main class - model.py
-The figure 1 window continues to appear although the animation appears in the GUI model window. 
-I think this figure still appears due to the formatting of the matplotlib figure in line 49. 
-I have tried to remove/change this code but I have not been success. There is no code formating the figure to show so I am confused as to why it still appears. 
-It does not affect the functioning of the model. 
-
 Unit test - test.py 
-The unit test code does not work as intended. The unit test code fails to assess if the source code correctly runs. 
-I have tried to write this test code so that it tests the move function. 
-I specifically wanted it to test that the x and y value increase by 1 since they are bigger than the thresholds set by the move function. 
-An attributeerror occurs as the agentframework is the only source code imported therefore there are no values for x or y in this code. 
-However, I could not import the model code without the model running and preventing the test from occuring. 
+Only one function was unit tested. 
 
 LICENSE document automatically created by Github. 
 

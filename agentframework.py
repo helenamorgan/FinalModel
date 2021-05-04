@@ -37,7 +37,7 @@ class Agent():
         ----------
         environment : list of integers
             A list of data from the in.text file  
-        agents : list of integers
+        agents : list of agents
             A list of the x and y coordinates
         x : integer
             Coordinate data scraped from a web page
@@ -70,6 +70,8 @@ class Agent():
         Returns
         -------
         None.
+        
+        >>> a = 
     
         """
         if random.random() < 0.5:
