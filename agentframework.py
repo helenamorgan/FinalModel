@@ -19,25 +19,25 @@ class Agent():
     def setx(self, x):
         self._x = x
         
-    def getx(self, x):
+    def getx(self):
         return self._x
     
     def sety(self, y):
         self._y = y
         
-    def gety(self, y):
+    def gety(self):
         return self._y
         
     def __init__(self, environment, agents, x=None, y=None):
         """
         This constructor function initialises the attributes of the Agent class. 
-        
+        If x and y have no value in data from the web page, a random number is assigned their value. 
 
         Parameters
         ----------
         environment : list of integers
             A list of data from the in.text file  
-        agents : list of agents
+        agents : list of Agent's
             A list of the x and y coordinates
         x : integer
             Coordinate data scraped from a web page
@@ -65,13 +65,14 @@ class Agent():
     
     def move(self): 
         """
-        This function alters the position of the agents randomly 
+        This function alters the position of the agents randomly dependent on their value in 
+        relation to the conditions set by the function. 
+        If the x and/or y coordinate is greater than 0.5, a value of 1 is added. 
+        If the x and/or y coordinate is less than 0.5, a value of 1 is subtracted. 
 
         Returns
         -------
         None.
-        
-        >>> a = 
     
         """
         if random.random() < 0.5:
@@ -85,7 +86,8 @@ class Agent():
     
     def eat(self):
         """
-        This function shares the agents location with the other agents allowing for communication and interaction. 
+        This function allows the agents to access and interact with thier environment,
+        and change the environment dependent on thier value. 
 
         Returns
         -------
@@ -99,7 +101,8 @@ class Agent():
     def share_with_neighbours(self, neighbourhood):
         """
 
-        This function uses the distance between one agent compared with all of the other agents. 
+        This function uses the distance between one agent compared with all of the other agents, 
+        allowing for the agents to communicate and interact with one another. 
         If this distance is within the set neighbourhood distance, 
         this function sets and stores the agents and its neighbours as equal to their combined average.   
 
@@ -120,7 +123,7 @@ class Agent():
                 ave = distancesum /2
                 self.store = ave
                 agent.store = ave
-                print("sharing " + str(distance) + " " + str(ave))
+                #print("sharing " + str(distance) + " " + str(ave))
                 #print("neighbourhood" + "=" + str(neighbourhood))
                 
     def distance_between(self, agent):

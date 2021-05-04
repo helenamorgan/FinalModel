@@ -14,8 +14,8 @@ content = r.text # content turns the web page data to a str
 soup = bs4.BeautifulSoup(content, 'html.parser') # soup uses a parser module BeautifulSoup to turn the web page data into a data object model 
 td_ys = soup.find_all(attrs={"class" : "y"}) # y coordinates
 td_xs = soup.find_all(attrs={"class" : "x"}) # x coordinates 
-print(td_ys) # print the y coordinates 
-print(td_xs) # print the x coordinates
+#print(td_ys) # print the y coordinates 
+#print(td_xs) # print the x coordinates
 
 # Import and change matplotlib backends
 import matplotlib
@@ -47,7 +47,7 @@ f.close()
 
 # Create the figure
 fig = matplotlib.pyplot.figure(figsize=(7, 7)) # fig creates a figure for the data to be displayed in 
-ax = fig.add_axes([0, 0, 1, 1])
+ax = fig.add_axes([0, 0, 1, 1]) # add axes to the figure 
 
 # Initialising the agents
 num_of_agents = 5 # determines the number of pairs of coordintes created 
@@ -70,16 +70,16 @@ def update(frame_number):
         for i in range(num_of_agents): # for the set number of pairs of coordinates 
             random.shuffle(agents) # randomly shuffles the order of the coordinates 
             agents[i].move() # move the agents dependent on their initial value 
-            agents[i].eat() # shares the location of each agent with the other agents 
+            agents[i].eat() # allows the agents to change the environment 
             agents[i].share_with_neighbours(neighbourhood) # allows the agents to communicate with the other agents 
 # A stopping condition for the model 
         if random.random() < 0.5: 
             carry_on = False
-            print("stopping condition")
+            #print("stopping condition")
 # Create a scatter plot of the agents 
         for i in range(num_of_agents):
             matplotlib.pyplot.scatter(agents[i]._x,agents[i]._y)
-            #print(agents[i][0],agents[i][1])
+            #print(agents[i][0],agents[i][1]) # check the agent values 
 
 # Import GUI library 
 import tkinter
