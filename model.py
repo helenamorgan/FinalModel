@@ -4,7 +4,7 @@ Created on Tue Mar 23 09:37:53 2021
 
 @author: helena
 """
-# Import libraries for accessing the web page 
+# Import libraries for accessing web pages
 import requests
 import bs4
 
@@ -17,7 +17,7 @@ td_xs = soup.find_all(attrs={"class" : "x"}) # x coordinates
 #print(td_ys) # print the y coordinates 
 #print(td_xs) # print the x coordinates
 
-# Import and change matplotlib backends
+# Import and change matplotlib backends to produce the GUI
 import matplotlib
 matplotlib.use('TkAgg')
 
@@ -28,6 +28,7 @@ import agentframework
 import csv
 
 # Set a seed to create the same numbers each time the code is run
+# Optiional decision within this model
 random.seed(4323432421)
 
 # Read in the CSV data file and create a list 
@@ -62,7 +63,7 @@ num_of_iterations = 5 # the number of times the model will run
 neighbourhood = 20 # the number of interactions agents with have with their neighbours 
 carry_on = True
 
-# Shuffle the data, then move and interact the agents, then change the environment data
+# Shuffle the data, then move the agents and change the environment data, then allow the agents to interact based on their relative location
 def update(frame_number):
     fig.clear()   
     global carry_on

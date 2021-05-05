@@ -35,6 +35,7 @@ class TestAgent(unittest.TestCase): # identifies this class is to be tested
         print("bx", b.getx()) # check the value of bx
         print("by", b.gety()) # check the value of by
         d = a.distance_between(b) # d calculates the distance between the x and y variables of a and b 
+        print("Distance between these agents is " + str(d)) # prints the distance 
         self.assertEqual(d, 5, "should be 5") # checks the distance function produces the same values as the test values 
 
 if __name__ == '__main__': # the class runs within framework within the unittest library 
